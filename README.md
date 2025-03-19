@@ -34,3 +34,9 @@ Exposes endpoints to:
 - **CPU:** Dual-core processor (or equivalent) recommended.
 - **Memory:** Minimum 4 GB of RAM (8 GB+ recommended for smoother performance).
 - **Disk Space:** ~1 GB free for .NET, SQL Server, and the project files.
+
+## Security + Cloud 
+- You can secure API endpoints using token-based (JWT), API key, or Basic Auth over HTTPS.
+- Token-based auth validates a JWT in an Authorization header, and API keys rely on shared secrets.
+- For cloud hosting, Azure offers App Service/Container Instances, Azure SQL, and Key Vault.
+
