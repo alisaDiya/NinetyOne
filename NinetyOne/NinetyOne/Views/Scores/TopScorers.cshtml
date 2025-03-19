@@ -1,0 +1,11 @@
+﻿@model IEnumerable<NinetyOne.Models.Person>
+<h2>Top Scorers</h2>
+<ul>
+    @foreach (var person in Model)
+    {
+        <li>
+            @person.FirstName @person.SecondName
+            (Score: @person.Score)
+        </li>
+    }
+</ul>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<NinetyOne.Models.Person>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>All Scores</h2>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Second Name</th>
+        <th>Score</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.FirstName</td>
+            <td>@person.SecondName</td>
+            <td>@person.Score</td>
+        </tr>
+    }
+</table>
+
+<form method="post" asp-action="Import">
+    <button type="submit">Import CSV</button>
+</form>
